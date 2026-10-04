@@ -22,3 +22,16 @@ conda activate cspc
 
 **Conclusion:**
 - NumPy's vectorized operations are dramatically faster than pure-Python loops for large simulations. Working through Git branching and pushing to GitHub helped me understand the basic version-control workflow.
+## PW1 --- Lab B
+
+**What the data showed:** The observed counts start at 5000 and decrease
+quickly over time, approaching zero around t = 15-20, which is typical
+exponential decay.
+
+**Match with the analytical law:** Yes. The observed points follow the
+analytical curve N0·exp(-λt) with λ = 0.3 very closely; the small
+differences look like random measurement noise.
+
+**Snakemake pipeline:** The Snakefile defines one rule that builds
+figure.png from decay_observed.csv and plot.py, and it only reruns the
+plot when one of those inputs has changed.
