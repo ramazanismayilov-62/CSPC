@@ -35,3 +35,5 @@ differences look like random measurement noise.
 **Snakemake pipeline:** The Snakefile defines one rule that builds
 figure.png from decay_observed.csv and plot.py, and it only reruns the
 plot when one of those inputs has changed.
+## PW1 --- Lab A 
+ **The acceleration is much noisier than the position because we divide by a very small time step (0.1 s). Small errors in the position become bigger when we do this. We do it two times, so the errors become about 100 times bigger.**
